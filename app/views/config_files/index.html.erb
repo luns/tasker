@@ -1,0 +1,37 @@
+<h3 xmlns="http://www.w3.org/1999/html">список объектов</h3>
+<%= will_paginate @config_files, renderer: BootstrapPagination::Rails %>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>конфигурация</th>
+      <th>имя</th>
+      <th>тип объекта</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @config_files.each do |config_file| %>
+      <tr>
+        <td><%= config_file.config %></td>
+        <td><%= config_file.name %></td>
+        <td><%= config_file.object_type %></td>
+        <td>
+          <div class="btn-group btn-group-xs">
+            <%= link_to 'S', config_file , class: 'btn btn-default'%>
+            <%= link_to 'E', edit_config_file_path(config_file), class: 'btn btn-default' %>
+            <%= link_to 'D', config_file, method: :delete, data: { confirm: 'Are you sure?' } , class: 'btn btn-default'%>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tr>
+    <td colspan="4">
+      <%= will_paginate @config_files, renderer: BootstrapPagination::Rails %>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+

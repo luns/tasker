@@ -1,0 +1,9 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: tasker
+  pool: 5
+  username: tasker
+  password: Wertuhai847438
+  shost: localhost

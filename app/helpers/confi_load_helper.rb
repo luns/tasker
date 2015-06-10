@@ -1,0 +1,2 @@
+module ConfiLoadHelper
+end
