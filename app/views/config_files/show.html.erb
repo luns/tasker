@@ -10,13 +10,7 @@
         <div id="file_text"><h5><%= @config_file.name %> <span class="caret"></span></h5></div>
       </div>
       <div id="file_text_panel" class="collapse">
-        <div class="panel-body">
-    <pre>
-      <code>
-        <%= @config_file.text %>
-      </code>
-    </pre>
-        </div>
+        <div class="panel-body"><pre><code><%=@config_file.text%></code></pre></div>
       </div>
     </div>
 

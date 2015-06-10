@@ -1,7 +1,7 @@
 class ConfiLoadController < ApplicationController
     def Load
         require 'find'
-        $searchpath = '/home/luns/Загрузки/тестовые файлы'
+        $searchpath = 'D:\files'
         $pattern = '*'
 
         Find.find($searchpath) do |path|
