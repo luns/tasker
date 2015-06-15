@@ -50,3 +50,4 @@ end
 # 0.0.1 -> для bootstrap
 gem 'bootstrap-sass'
 gem 'will_paginate-bootstrap'
+gem 'font-awesome-sass'
